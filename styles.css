@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #141414;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(270deg, blue, red);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2b8a13;
+  }
+  
+  .header .logo img {
+    width: 220px;
+  }
+  
+  .hero {
+    margin: 20px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    color: #b3b3b3;
+  }
+  
+  .plan-selection {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+  
+  .plan {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .plan .price {
+    font-size: 1.5em;
+    color: #e50914;
+    margin-bottom: 20px;
+  }
+  
+  .plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .plan ul li {
+    margin: 10px 0;
+  }
+  
+  .plan button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  
+  .plan button:hover {
+    background-color: #ff5c64;
+  }
+  
+  footer {
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #b3b3b3;
+  }
+  
